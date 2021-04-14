@@ -21,7 +21,7 @@ import math
 
 y = lambda a : math.factorial(a)
 a = 5 #input("Enter a number: ")
-print('{} != {}'.format(a, y(a))
+print('{} != {}'.format(a, y(a)))
 
 # Factorial
 def factorial(x):
@@ -31,5 +31,6 @@ def factorial(x):
         return x*factorial(x-1)
     
 n = 6 #input("Enter a number: ")
+print( factorial( int(n) ) )
 print('{} != {}'.format(n, factorial(int(n))))
 
