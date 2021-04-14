@@ -19,6 +19,7 @@ if __name__ == "__main__":
 
 import math
 
+print('Using math.factorial function:')
 y = lambda a : math.factorial(a)
 a = 5 #input("Enter a number: ")
 print('{} != {}'.format(a, y(a)))
@@ -29,8 +30,21 @@ def factorial(x):
         return x
     else:
         return x*factorial(x-1)
-    
-n = 6 #input("Enter a number: ")
-print( factorial( int(n) ) )
-print('{} != {}'.format(n, factorial(int(n))))
 
+# A Fibonacci sequence is the integer sequence of 0, 1, 1, 2, 3, 5, 8....
+def fibonacci (x):
+    if x <= 1:
+        return x
+    else:
+        return fibonacci(x-1) + fibonacci(x-2)
+
+print('Factorial of n:')
+n = int(6) #input("Enter a number: ")
+print( factorial(n) )
+print('{} != {}'.format(n, factorial(n)))
+
+print('A Fibonacci sequence:')
+x = int(5)  #(input("How many terms? "))
+print("Fibonacci sequence:")
+for i in range(x):
+     print(fibonacci(i))
