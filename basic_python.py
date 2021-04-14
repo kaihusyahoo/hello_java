@@ -3,17 +3,25 @@
 import os 
 
 if __name__ == "__main__": 
-    for (root,dirs,files) in os.walk('.', topdown=1): 
-        print (root) 
-        print (dirs) 
-        print (files) 
-        print ('--------------------------------')
+    if False:
+       for (root,dirs,files) in os.walk('.', topdown=1): 
+          print (root) 
+          print (dirs) 
+          print (files) 
+          print ('--------------------------------')
+    # get the current directory
+    thisdir = os.getcwd()
+    print(thisdir)
+    arr = next(os.walk('.'))[2]   # os.walk(): list files of a tree
+    print(arr)
+    arr = os.listdir()            # os.listdir(): list in the current directory
+    print(arr)
 
 import math
 
 y = lambda a : math.factorial(a)
 a = 5 #input("Enter a number: ")
-prinit(a, '! = ', y(a))
+print(a, '! = ', y(a))
 
 # Factorial
 def factorial(x):
