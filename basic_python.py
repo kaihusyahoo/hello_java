@@ -14,8 +14,8 @@ if __name__ == "__main__":
     print(thisdir)
     arr = next(os.walk('.'))[2]   # os.walk(): list files of a tree
     print(arr)
-    arr = os.listdir()            # os.listdir(): list in the current directory
-    print(arr)
+    #arr = os.listdir()            # os.listdir(): list in the current directory
+    #print(arr)
 
 import math
 
