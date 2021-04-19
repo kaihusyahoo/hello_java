@@ -22,4 +22,9 @@ pipeline {
             }
         }      
     }
+    post {
+        always {
+            echo 'Jenkins Pipelin project is complete!'
+        }
+    }
 }
