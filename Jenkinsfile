@@ -1,14 +1,8 @@
-CODE_CHANGES = getGitChanges()
 pipeline {
     
     agent any 
     stages {
-        stage('Build') {
-            when {
-                expression {
-                    BRANCH_NAME == 'dev' && CODE_CHANGES == true
-                }
-            }            
+        stage('Build') {        
             steps {
                 echo 'Building the application...'
                 sh 'python --version'
