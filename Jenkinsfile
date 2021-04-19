@@ -26,5 +26,11 @@ pipeline {
         always {
             echo 'Jenkins Pipelin project is complete!'
         }
+        success {
+            echo 'sending success email to suce@yahoo.com'
+        }
+        failure {
+            echo 'sending failure email to fail@yahoolcom'
+        }
     }
 }
