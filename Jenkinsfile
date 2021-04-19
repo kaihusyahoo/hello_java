@@ -11,11 +11,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh 'java -version'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh 'git --version'
             }
         }
     }
