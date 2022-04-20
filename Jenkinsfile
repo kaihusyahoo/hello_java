@@ -18,6 +18,7 @@ pipeline {
                 echo 'Building...'
                 sh 'python --version'
                 sh 'java -version'
+                sh 'python basic_python.py'
             }
         }
         stage('Test') {
