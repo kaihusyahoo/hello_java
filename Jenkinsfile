@@ -20,6 +20,12 @@ pipeline {
                 sh 'java -version'
             }
         }
+        stage('Unit Testing') { // Perform unit testing
+            steps {
+               sh 'python basic_python.py'
+            }
+          }
+        }
         stage('Test') {
             when {
                 expression {
