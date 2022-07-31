@@ -1,0 +1,29 @@
+<devices size="2">
+
+	<link rel="self" href="/devices"/>
+
+	<device id="12345">
+		<link rel="self" href="/devices/12345"/>
+		<deviceFamily>apple-es</deviceFamily>
+		<OSVersion>10.3R2.11</OSVersion>
+		<platform>SRX100B</platform>
+		<serialNumber>32423457</serialNumber>
+		<connectionStatus>up</connectionStatus>
+		<ipAddr>192.168.21.9</ipAddr>
+		<name>apple-srx_200</name>
+		<status>active</status>
+	</device>
+
+	<device id="556677">
+		<link rel="self" href="/devices/556677"/>
+		<deviceFamily>apple-es</deviceFamily>
+		<OSVersion>10.3R2.11</OSVersion>
+		<platform>SRX100B</platform>
+		<serialNumber>6453534</serialNumber>
+		<connectionStatus>up</connectionStatus>
+		<ipAddr>192.168.20.23</ipAddr>
+		<name>apple-srx_200</name>
+		<status>active</status>
+	</device>
+
+</devices>
